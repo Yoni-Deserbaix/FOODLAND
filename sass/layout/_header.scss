@@ -1,0 +1,77 @@
+
+
+nav {
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $bg-color;
+    padding: 20px 50px;
+    transition: 0.5s;
+    box-shadow: 0 5px 5px rgba(0, 0, 0,0.2);
+}
+
+.profil {
+    @extend %flex-center;
+    column-gap: .5rem;
+    cursor: pointer;
+}
+
+.profil img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profil span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.logo {
+    @extend %flex-center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: $text;
+}
+
+.logo span {
+    column-gap: 5rem;
+}
+
+// logo rockstar
+.logo .bx {
+    color: $dark-red;
+    font-size: 2rem;
+}
+
+.navigation {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.navigation a {
+    font-size: 1rem;
+    color: $text;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+}
+
+.navigation a:hover, .navigation a.link-active {
+    color: $bg-color;
+    background-color: $dark-red;
+    border-radius: 50px;
+    transition: .2s ease-in-out;
+}
+
+#burger-menu {
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 99;
+    display:none;
+}

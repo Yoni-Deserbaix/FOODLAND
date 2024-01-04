@@ -1,0 +1,29 @@
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: $font-family;
+    color: $text;
+    background-color: $bg-color; 
+  }
+ 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-title;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  section {
+    padding: 5rem 0 1rem;
+  }
+  
