@@ -7,34 +7,206 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/index.css" />
 
-    <title>Document</title>
+    <title>Food</title>
   </head>
   <body>
     <!-- ################### -->
     <!-- Navigation -->
     <!-- ################### -->
-    <header>
-      <nav>
-        <a href="#" class="logo"> 
+    <nav>
+      <a href="#" class="logo">
         <i class="bx bxs-bowl-hot" class="bx bx-menu"></i>
-        <span>FOOD</span></a>
-        <ul class="navigation">
-          <li><a href="#home" class="link-active">Home</a></li>
-          <li><a href="#category">Categorie</a></li>
-          <li><a href="#products">Produits</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#reviews">Avis</a></li>
-        </ul>
-        <div class="profil">
-          <img src="assets/images/avis-01.jpg" alt="pp" />
-          <span>Soraya Does</span>
-          <i class="bx bx-caret-down"></i>
-        </div>
-      </nav>
-    </header>
+        <span>FOOD</span></a
+      >
+      <ul class="navigation">
+        <li><a href="#home" class="link-active">Home</a></li>
+        <li><a href="#category">Categorie</a></li>
+        <li><a href="#products">Produits</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#reviews">Avis</a></li>
+      </ul>
+      <div class="profil">
+        <img src="assets/images/avis-01.jpg" alt="pp" />
+        <span>Soraya Does</span>
+        <i class="bx bx-caret-down"></i>
+      </div>
+    </nav>
 
+    <!-- ################### -->
+    <!-- Navigation -->
+    <!-- ################### -->
+
+    <section id="home" class="home swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slider-container">
+          <div class="home-txt">
+            <span>Vous avez le choix</span>
+            <h1>Destination Gourmande<br />Incontournable!</h1>
+            <a href="#" class="btn"
+              >Voir burger <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="assets/images/Burger-01.png" alt="Burger 01" />
+        </div>
+        <div class="swiper-slide slider-container">
+          <div class="home-txt">
+            <span>Vous avez le choix</span>
+            <h1>Notre univers<br />Burger vous attend!</h1>
+            <a href="#" class="btn"
+              >Voir burger <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="assets/images/Burger-02.png" alt="Burger 02" />
+        </div>
+        <div class="swiper-slide slider-container">
+          <div class="home-txt">
+            <span>Vous avez le choix</span>
+            <h1>Votre bonheur<br />Burger vous attend!</h1>
+            <a href="#" class="btn"
+              >Voir burger <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+          <img src="assets/images/Burger-03.png" alt="Burger 03" />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </section>
+
+    <!-- ################### -->
+    <!-- Categories -->
+    <!-- ################### -->
+
+    <section class="categories" id="categories">
+      <div class="section-heading">
+        <h2>Decouvrez nos <span>catégories</span></h2>
+        <a href="#" class="btn"><i class="bx bx-right-arrow-alt"></i></a>
+      </div>
+      <div class="categories-content">
+        <!-- box1 -->
+        <div class="categories-box categories-box1">
+          <img src="assets/images/Cat-01.png" alt="image burger" />
+          <h3>Les burgers</h3>
+          <span>30 produits</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+
+        <!-- box2  -->
+        <div class="categories-box categories-box2">
+          <img src="assets/images/Cat-02.png" alt="image croissant" />
+          <h3>Les croissants</h3>
+          <span>30 produits</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+
+        <!-- box3  -->
+        <div class="categories-box categories-box3">
+          <img src="assets/images/Cat-03.png" alt="image salade" />
+          <h3>Les salades</h3>
+          <span>30 produits</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+
+        <!-- box4  -->
+        <div class="categories-box categories-box4">
+          <img src="assets/images/Cat-04.png" alt="image accompagnements" />
+          <h3>Les garnitures</h3>
+          <span>20 produits</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+
+        <!-- box5  -->
+        <div class="categories-box categories-box5">
+          <img src="assets/images/Cat-05.png" alt="image boisson" />
+          <h3>Les boissons</h3>
+          <span>20 produits</span>
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ################### -->
+    <!-- Produits -->
+    <!-- ################### -->
+
+    <section id="products" class="products">
+      <div class="section-heading">
+        <h2>Les plus <span>Populaires</span></h2>
+        <a href="#" class="btn"> <i class="bx bx-right-arrow-alt"></i> </a>
+      </div>
+
+      <div class="products-container">
+        <!-- box1  -->
+        <div class="products-box">
+          <img src="assets/images/prod-01.png" alt="" />
+          <span>Burgers</span>
+          <h4>Chicken Burger</h4>
+          <h5 class="price">9.99€</h5>
+          <i class="bx bx-cart-add"></i>
+          <i class="bx bx-heart"></i>
+          <span class="discount">-10%</span>
+        </div>
+        <!-- box2  -->
+        <div class="products-box">
+          <img src="assets/images/prod-02.png" alt="" />
+          <span>Burgers</span>
+          <h4>Hot Dog</h4>
+          <h5 class="price">7.99€</h5>
+          <i class="bx bx-cart-add"></i>
+          <i class="bx bx-heart"></i>
+          <span class="discount">-10%</span>
+        </div>
+        <!-- box3  -->
+        <div class="products-box">
+          <img src="assets/images/prod-03.png" alt="" />
+          <span>Burgers</span>
+          <h4>Special croque</h4>
+          <h5 class="price">5.99€</h5>
+          <i class="bx bx-cart-add"></i>
+          <i class="bx bx-heart"></i>
+          <span class="discount">-10%</span>
+        </div>
+        <!-- box4  -->
+        <div class="products-box">
+          <img src="assets/images/prod-04.png" alt="" />
+          <span>Soupes</span>
+          <h4>Soupe du pays</h4>
+          <h5 class="price">5.99€</h5>
+          <i class="bx bx-cart-add"></i>
+          <i class="bx bx-heart"></i>
+          <span class="discount">-10%</span>
+        </div>
+        <!-- box5  -->
+        <div class="products-box">
+          <img src="assets/images/prod-05.png" alt="" />
+          <span>Poissons</span>
+          <h4>Crevettes Thaï</h4>
+          <h5 class="price">5.99€</h5>
+          <i class="bx bx-cart-add"></i>
+          <i class="bx bx-heart"></i>
+          <span class="discount">-10%</span>
+        </div>
+        <!-- box6  -->
+        <div class="products-box">
+          <img src="assets/images/prod-06.png" alt="" />
+          <span>Autres</span>
+          <h4>Chicken wings</h4>
+          <h5 class="price">5.99€</h5>
+          <i class="bx bx-cart-add"></i>
+          <i class="bx bx-heart"></i>
+          <span class="discount">-10%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Poppins:wght@300;400;600;700&display=swap");
-.logo, .profil {
+.categories-box, .btn, .slider-container, .logo, .profil {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@ nav {
 }
 
 .logo span {
-  column-gap: 5rem;
+  column-gap: 0.5rem;
 }
 
 .logo .bx {
@@ -64,7 +64,8 @@ nav {
   padding: 0.5rem 1rem;
 }
 
-.navigation a:hover, .navigation a.link-active {
+.navigation a:hover,
+.navigation a.link-active {
   color: #f1f1f1;
   background-color: rgb(122, 5, 5);
   border-radius: 50px;
@@ -76,6 +77,190 @@ nav {
   cursor: pointer;
   z-index: 99;
   display: none;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  min-height: 800px;
+  overflow: hidden;
+  background-image: url("../../assets/images/img-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-container img {
+  width: 500px;
+  position: absolute;
+  right: 150px;
+  bottom: 0px;
+}
+
+.btn {
+  display: inline-block;
+  width: 170px;
+  height: 50px;
+  background-color: rgb(122, 5, 5);
+  color: #f1f1f1;
+  border-radius: 50px;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  transition: 0.2s ease-in-out;
+}
+.btn:hover {
+  background: rgb(233, 155, 155);
+}
+.btn::after {
+  display: none;
+}
+
+.home-txt {
+  padding: 0 150px;
+}
+
+.home-txt span {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: rgb(233, 155, 155);
+}
+
+.home-txt h1 {
+  font-size: clamp(30px, 4vw, 60px);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.swiper-button-next {
+  background: no-repeat center/cover url("../../assets/images/right.png");
+  margin-right: 20px;
+  background-size: 100% auto;
+}
+
+.swiper-button-prev {
+  background: no-repeat center/cover url("../../assets/images/left.png");
+  margin-left: 20px;
+  background-size: 100% auto;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+
+.categories {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-heading h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.section-heading span {
+  color: rgb(233, 155, 155);
+}
+
+.categories-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.categories-box {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+
+.categories-box img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.categories-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.categories-box span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.categories-box .bx {
+  padding: 10px;
+  background-color: rgb(122, 5, 5);
+  color: rgb(233, 155, 155);
+  border-radius: 5rem;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: -8%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.categories-box:hover .bx {
+  opacity: 1;
+}
+
+.categories-box1 {
+  background-color: rgb(255, 222, 222);
+}
+
+.categories-box2 {
+  background-color: rgb(255, 248, 222);
+}
+
+.categories-box3 {
+  background-color: rgb(233, 255, 222);
+}
+
+.categories-box4 {
+  background-color: rgb(255, 233, 255);
+}
+
+.categories-box5 {
+  background-color: rgb(255, 222, 254);
+}
+
+.products {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.products-box {
+  padding: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border-radius: 0.5rem;
+}
+
+.products-box img {
+  width: 100%;
+  height: 200px;
 }
 
 * {
@@ -94,7 +279,12 @@ body {
   background-color: #f1f1f1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Mochiy Pop One", sans-serif;
 }
 

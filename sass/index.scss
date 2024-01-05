@@ -1,4 +1,3 @@
-
 // Utils import
 @import "./utils/breakpoint";
 @import "./utils/mixins";
@@ -8,4 +7,10 @@
 
 // Layout import
 @import "./layout/header";
+@import "./layout/home";
+@import "./layout/categories";
+@import "./layout/products";
 @import "./layout/main";
+
+// Components import
+@import "./components/button";

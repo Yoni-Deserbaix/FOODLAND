@@ -1,0 +1,87 @@
+.categories {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-heading h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.section-heading span {
+  color: $light-red;
+}
+
+.categories-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+.categories-box {
+  position: relative;
+  @extend %flex-center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 0.5rem;
+}
+
+.categories-box img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.categories-box h3 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.categories-box span {
+  font-size: 0.7rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.categories-box .bx {
+  padding: 10px;
+  background-color: $dark-red;
+  color: $light-red;
+  border-radius: 5rem;
+  margin-top: 2rem;
+  position: absolute;
+  bottom: -8%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.categories-box:hover .bx {
+  opacity: 1;
+}
+
+.categories-box1 {
+  background-color: rgb(255, 222, 222);
+}
+.categories-box2 {
+  background-color: rgb(255, 248, 222);
+}
+.categories-box3 {
+  background-color: rgb(233, 255, 222);
+}
+.categories-box4 {
+  background-color: rgb(255, 233, 255);
+}
+.categories-box5 {
+  background-color: rgb(255, 222, 254);
+}
