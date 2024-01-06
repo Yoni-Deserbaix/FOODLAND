@@ -1,0 +1,19 @@
+.about {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
+  gap: 0.1rem;
+  align-items: center;
+}
+
+.about .about-txt span {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $light-red;
+}
+
+.about .about-txt p {
+    margin:1rem 0;
+}
