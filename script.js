@@ -1,6 +1,8 @@
 let swiper = new Swiper(".home", {
   spaceBetween: 30,
   centeredSlides: true,
+  autoplay: true,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
