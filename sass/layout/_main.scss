@@ -30,3 +30,13 @@ img {
 section {
   padding: 5rem 0 1rem;
 }
+
+@media screen and (max-width: $tablet-width) {
+  section {
+    padding: 50px 4%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
+}

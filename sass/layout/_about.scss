@@ -1,7 +1,5 @@
 .about {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  @extend %section-position;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
   gap: 0.1rem;
@@ -16,4 +14,10 @@
 
 .about .about-txt p {
     margin:1rem 0;
+}
+
+@media (max-width: $tablet-width) {
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
 }

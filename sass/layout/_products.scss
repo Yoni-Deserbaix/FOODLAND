@@ -1,7 +1,5 @@
 .products {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  @extend %section-position;
 }
 
 .products-container {
@@ -13,9 +11,9 @@
 
 .products-box {
   padding: 20px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
+  box-shadow: $shadow;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 .products-box img {
@@ -80,4 +78,10 @@
   color: $light-orange;
   padding: 0.5rem 2rem 0.5rem 1rem;
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+}
+
+@media (max-width: $tablet-width) {
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
 }

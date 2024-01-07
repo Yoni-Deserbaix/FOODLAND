@@ -9,7 +9,7 @@
   background-size: cover;
 }
 .slider-container img {
-  width: 500px;
+  width: 400px;
   position: absolute;
   right: 150px;
   bottom: 0px;
@@ -65,4 +65,36 @@
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
+}
+
+@media (max-width: $tablet-width) {
+  .home-txt {
+    padding: 0 100px;
+  }
+
+  .slider-container img {
+    width: 390px;
+    right: 20px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  #burger-menu {
+    display: block;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .home-txt {
+    padding: 0 20px;
+    padding-bottom: 17px;
+    margin-top: -250px;
+  }
+  .slider-container img {
+    right: 0;
+  }
 }

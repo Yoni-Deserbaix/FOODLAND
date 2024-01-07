@@ -1,7 +1,5 @@
 .categories {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+  @extend %section-position;
 }
 
 .section-heading {
@@ -84,4 +82,16 @@
 }
 .categories-box5 {
   background-color: rgb(255, 222, 254);
+}
+
+@media (max-width: $mobile-width) {
+  .section-heading {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-heading .btn {
+    margin-top: 1.5rem;
+    width: 150px;
+  }
 }

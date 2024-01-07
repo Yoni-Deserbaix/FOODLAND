@@ -5,7 +5,13 @@
   align-items: center;
 }
 
-nav {
+.reviews, .about, .products, .categories {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
   position: fixed;
   z-index: 99;
   left: 0;
@@ -67,7 +73,7 @@ nav {
 }
 
 .navigation a:hover,
-.navigation a.link-active {
+.navigation a.active {
   color: #f1f1f1;
   background-color: rgb(122, 5, 5);
   border-radius: 50px;
@@ -81,6 +87,39 @@ nav {
   display: none;
 }
 
+@media (max-width: 852px) {
+  header {
+    padding: 12px 4%;
+  }
+  .navigation {
+    position: absolute;
+    top: -600px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+  .navigation a {
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+  .navigation a:hover {
+    background-color: rgb(122, 5, 5);
+  }
+  .navigation.active {
+    top: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .profil span {
+    display: none;
+  }
+}
 .slider-container {
   position: relative;
   width: 100%;
@@ -92,7 +131,7 @@ nav {
 }
 
 .slider-container img {
-  width: 500px;
+  width: 400px;
   position: absolute;
   right: 150px;
   bottom: 0px;
@@ -149,12 +188,34 @@ nav {
   display: none;
 }
 
-.categories {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+@media (max-width: 852px) {
+  .home-txt {
+    padding: 0 100px;
+  }
+  .slider-container img {
+    width: 390px;
+    right: 20px;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
 }
-
+@media (max-width: 852px) {
+  #burger-menu {
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .home-txt {
+    padding: 0 20px;
+    padding-bottom: 17px;
+    margin-top: -250px;
+  }
+  .slider-container img {
+    right: 0;
+  }
+}
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -240,12 +301,16 @@ nav {
   background-color: rgb(255, 222, 254);
 }
 
-.products {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+@media (max-width: 600px) {
+  .section-heading {
+    flex-direction: column;
+    text-align: center;
+  }
+  .section-heading .btn {
+    margin-top: 1.5rem;
+    width: 150px;
+  }
 }
-
 .products-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, auto));
@@ -256,8 +321,8 @@ nav {
 .products-box {
   padding: 20px;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  position: relative;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 .products-box img {
@@ -325,10 +390,12 @@ nav {
   clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
 }
 
+@media (max-width: 852px) {
+  .products-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+}
 .about {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, auto));
   gap: 0.1rem;
@@ -345,12 +412,11 @@ nav {
   margin: 1rem 0;
 }
 
-.reviews {
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
+@media (max-width: 852px) {
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
 }
-
 .reviews h2 {
   text-align: center;
   font-size: 1.8rem;
@@ -409,6 +475,11 @@ nav {
   font-size: 1.2rem;
 }
 
+@media (max-width: 852px) {
+  .avis-content {
+    grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  }
+}
 footer {
   width: 100%;
   margin: 0 auto;
@@ -521,4 +592,14 @@ img {
 
 section {
   padding: 5rem 0 1rem;
+}
+
+@media screen and (max-width: 852px) {
+  section {
+    padding: 50px 4%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
 }/*# sourceMappingURL=index.css.map */
