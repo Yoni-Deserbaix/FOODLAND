@@ -2,7 +2,7 @@
 FOODLAND is a fast food landing page designed to showcase a variety of food items by categories, the most popular ones, customer reviews, etc. The main goal of this project was to acquire skills in SASS while refining the mastery of Flexbox and Grid concepts. The result is a responsive design with a dynamic navigation bar facilitating access to different sections of the site.
 
 ## View project 👀
-Check out the project 👉 [here](https://yoni-deserbaix.github.io/Fast-Food/)
+Check out the project 👉 [here](https://yoni-deserbaix.github.io/FOODLAND/)
 
 ## Screenshots 📸
 
@@ -27,7 +27,7 @@ To run the project locally:
 
 1. Clone the repository to your local machine <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="15" alt="git logo" />:
    ```bash
-   git clone https://github.com/Yoni-Deserbaix/Fast-Food.git
+   git clone https://github.com/Yoni-Deserbaix/FOODLAND.git
     ```
 2.Open the index.html file in a web browser.
 
